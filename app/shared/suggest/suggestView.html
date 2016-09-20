@@ -1,0 +1,81 @@
+<h2>Play matchmaker</h2>
+<p class="wideParagraph">Know a great place not listed on foodHarmony? Add it using this form.</p>
+<p class="wideParagraph">As other foodHarmony users like it, your suggestion will climb the search ranks.</p>
+<div class="row">
+  <div class="suggestContainer">
+    <form class="suggestForm">
+      <p class="required">*Required</p>
+
+      <label class="bold" for="restName">Restaurant name*</label>
+      <input id="restName" type="text" name="restName" value="">
+
+      <div class="row">
+        <div class="col span-3-of-5">
+          <label class="bold" for="streetAddress">Street address*</label>
+          <input id="streetAddress" type="text" name="streetAddress" value="">
+        </div>
+        <div class="col span-2-of-5">
+          <label for="zipcode">Zipcode</label>
+          <input id="zipcode" type="text" name="zipcode" value="">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col span-3-of-5">
+          <label for="website">Web address</label>
+          <input id="website" type="text" name="website" value="" placeholder="ex. www.yoursuggestion.com">
+        </div>
+        <div class="col span-2-of-5">
+          <label for="phoneNumber">Phone number</label>
+          <input id="phoneNumber" type="text" name="phoneNumber" value="" placeholder="ex. 4125551234">
+        </div>
+      </div>
+
+      <div id="restaurantTypeContainer">
+        <label class="bold">Type of restaurant*</label>
+      </div>
+
+      <div id="foodTypeContainer">
+        <label class="bold">Type of food*</label>
+      </div>
+
+      <div id="costCheckbox" class="row">
+        <label class="bold">Cost*</label>
+        <div class="row checkboxContainer">
+          <div class="col span-1-of-4">
+            <input class="checkbox" id="costLevelOneCheck" type="radio" name="costLevel" value="1">
+            <label class="checkboxLabel" for="costLevelOneCheck">$</label>
+          </div>
+          <div class="col span-1-of-4">
+            <input class="checkbox" id="costLevelTwoCheck" type="radio" name="costLevel" value="2">
+            <label class="checkboxLabel" for="costLevelTwoCheck">$$</label>
+          </div>
+          <div class="col span-1-of-4">
+            <input class="checkbox" id="costLevelThreeCheck" type="radio" name="costLevel" value="3">
+            <label class="checkboxLabel" for="costLevelThreeCheck">$$$</label>
+          </div>
+          <div class="col span-1-of-4">
+            <input class="checkbox" id="costLevelFourCheck" type="radio" name="costLevel" value="4">
+            <label class="checkboxLabel" for="costLevelFourCheck">$$$$</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <button id="suggestButton" class="searchButton" type="button" onclick='postRestaurant()'>Add your match</button>
+      </div>
+
+      <div id='addRestaurantModal' class='modal'>
+        <div class='modalContent'>
+          <div class='modalHeader'>
+            <span class='close'>x</span>
+            <h2>Thank you!</h2>
+          </div>
+          <div class='modalBody'>
+            <p>Thank you for adding a new restaurant to our system.<br> Every restaurant you add helps another foodHarmony user find their perfect match!</p>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
